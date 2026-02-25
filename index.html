@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Сайт портфолио Суслова Артема</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#work">Перейти к контенту</a>
+    <header>
+      <img src="img/Logo.png" alt="Логотип Суслова Артем" />
+      <nav>
+        <input type="checkbox" id="burger-toggle" />
+        <label
+          for="burger-toggle"
+          class="burger"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          role="button"
+          aria-haspopup="true"
+          aria-label="Открыть либо закрыть меню навигации"
+        >
+          <span class="line1"></span>
+          <span class="line2"></span>
+          <span class="line3"></span>
+        </label>
+        <div class="nav-links" id="nav-links">
+          <a href="#hero" aria-label="Перейти на главную страницу">Главная</a>
+          <a href="#work" aria-label="Перейти к блоку моих работ ">Мои работы</a>
+          <a href="#about" aria-label="Перейти к блоку обо мне">Обо мне</a>
+          <a href="#contact" aria-label="Перейти к блоку связаться со мной">Связаться со мной</a>
+          <a href="#footer" aria-label="Перейти к блоку контаков">Контакты</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" id="hero">
+        <h1>Суслов Артем</h1>
+        <h2>Веб-дизайнер</h2>
+        <p>
+          Меня зовут Суслов Артём, мне 23 года, и я — веб‑дизайнер, который превращает идеи в визуальные решения. Я создаю современные,
+          удобные и эстетичные интерфейсы, которые помогают бизнесу выглядеть сильнее, а пользователям — чувствовать себя комфортно.
+        </p>
+      </section>
+      <section class="work" id="work">
+        <h2>Мои работы</h2>
+        <div class="gallery">
+          <div class="card">
+            <img src="img/1.jpg" alt="Моя первая работа по созданию сайта" />
+            <p><strong>Премиальный минимализм</strong></p>
+            <p>
+              Создал визуальный образ, который подчёркивает чистоту формы и дорогую эстетику продукта. Акцент на свет, текстуры и ощущение
+              статуса
+            </p>
+          </div>
+          <div class="card">
+            <img src="img/2.png" alt="Моя вторая работа по созданию сайта" />
+            <p><strong>Современная кампания</strong></p>
+            <p>
+              Разработал стильную подачу с фокусом на естественность и уверенность модели. Чистый визуал, мягкий свет и акцент на продукте
+            </p>
+          </div>
+          <div class="card">
+            <img src="img/3.jpg" alt="Моя третья работа по созданию сайта" />
+            <p><strong>Универсальный стиль</strong></p>
+            <p>
+              Сформировал визуальную концепцию, которая подходит любой аудитории. Нейтральные тона, мягкие переходы и акцент на атмосфере
+            </p>
+          </div>
+          <div class="card">
+            <img src="img/4.jpg" alt="Моя четвертая работа по созданию сайта" />
+            <p><strong>Динамичный стиль</strong></p>
+            <p>Создал визуал с сильным характером и энергией. Контраст, фактура и уверенная подача — всё для усиления бренда</p>
+          </div>
+          <div class="card">
+            <img src="img/5.jpg" alt="ММоя пятая работа по созданию сайта" />
+            <p><strong>Эстетика 90‑х</strong></p>
+            <p>Разработал визуальный стиль, вдохновлённый модой и фотографией 90‑х. Характерная палитра, зернистость и настроение эпохи</p>
+          </div>
+          <div class="card">
+            <img src="img/6.jpg" alt="Моя шестая работа по созданию сайта" />
+            <p><strong>Минимализм и геометрия</strong></p>
+            <p>
+              Сделал акцент на чистых линиях, форме и пространстве. Визуал подчёркивает архитектурность образов и современный стиль бренда
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="about" id="about">
+        <h2>Обо мне</h2>
+        <div class="about-content">
+          <div class="about-photo">
+            <img src="img/Face.jpg" alt="Фотография Артема Суслов" />
+          </div>
+          <p>
+            В дизайне для меня важны чистота, логика и внимание к деталям. Я верю, что хороший интерфейс — это не просто красивая картинка,
+            а продуманная система, которая работает на пользователя и бренд. Поэтому в каждом проекте я стремлюсь найти баланс между
+            эстетикой и функциональностью.
+            <br />
+            <br />
+            Мне нравится изучать поведение пользователей, анализировать визуальные тренды и искать новые способы подачи информации. Я
+            постоянно развиваюсь: изучаю новые инструменты, экспериментирую с композициями, типографикой и цветом. Для меня дизайн — это не
+            работа по шаблону
+          </p>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h2>Связаться со мной</h2>
+        <form class="contact-form">
+          <label for="name"><span>Имя</span></label>
+          <input id="name" name="name" type="text" required aria-describedby="name-error" />
+          <div id="name-error" aria-live="polite" class="hidden">Поле «Имя» обязательно для заполнения.</div>
+
+          <label for="email"><span>Email</span></label>
+          <input id="email" name="email" type="email" required aria-describedby="email-error" />
+          <div id="email-error" aria-live="polite" class="hidden">Поле «Email» обязательно для заполнения.</div>
+
+          <label for="subscribe">
+            <input id="subscribe" name="subscribe" type="checkbox" />
+            <span>Подписаться на рассылку</span>
+          </label>
+
+          <button type="submit">Отправить</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer" id="footer">
+      <div class="footer-left">© 2026 Suslov Artem Inc.</div>
+      <div class="footer-right">
+        <a href="#">
+          <img src="img/free-icon-instagram-1384031.png" alt="Instagramm — ссылка на профиль" />
+        </a>
+        <a href="#">
+          <img src="img/free-icon-facebook-1077041.png" alt="Facebook — ссылка на профиль" />
+        </a>
+        <a href="#">
+          <img src="img/free-icon-twitter-1532424.png" alt="Twitter — ссылка на профиль" />
+        </a>
+        <a href="#">
+          <img src="img/free-icon-tik-tok-1946552.png" alt="TikTok — ссылка на профиль" />
+        </a>
+        <a href="#">
+          <img src="img/free-icon-telegram-739260.png" alt="Telegram — ссылка на профиль" />
+        </a>
+        <a href="#">
+          <img src="img/free-icon-youtube-1077046.png" alt="YouTube — ссылка на профиль" />
+        </a>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
